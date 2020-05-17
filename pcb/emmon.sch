@@ -123,17 +123,6 @@ F 3 "https://mikroelectron.com/Product/10KM-433M-LORA-LONG-RANGE-WIRELESS-MODULE
 	1    5300 3350
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3.3V #PWR0120
-U 1 1 5ED1131C
-P 5300 2500
-F 0 "#PWR0120" H 5300 2350 50  0001 C CNN
-F 1 "+3.3V" H 5450 2550 50  0000 C CNN
-F 2 "" H 5300 2500 50  0001 C CNN
-F 3 "" H 5300 2500 50  0001 C CNN
-	1    5300 2500
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5300 2550 5300 2500
 $Comp
@@ -321,7 +310,7 @@ U 1 1 5ED73912
 P 1700 3600
 F 0 "J1" H 1780 3642 50  0000 L CNN
 F 1 "PULSES_CONNECTOR" H 1780 3551 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S3B-PH-K_1x03_P2.00mm_Horizontal" H 1700 3600 50  0001 C CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 1700 3600 50  0001 C CNN
 F 3 "~" H 1700 3600 50  0001 C CNN
 	1    1700 3600
 	1    0    0    -1  
@@ -489,8 +478,6 @@ Wire Notes Line style solid
 Wire Notes Line style solid
 	1050 3300 1050 5950
 Wire Notes Line style solid
-	1050 5950 2850 5950
-Wire Notes Line style solid
 	2850 3300 2850 5950
 Text Notes 1050 3250 0    50   ~ 0
 CONNECTORS
@@ -654,12 +641,12 @@ $EndComp
 $Comp
 L power:GND #PWR0136
 U 1 1 5EF90870
-P 2000 5700
-F 0 "#PWR0136" H 2000 5450 50  0001 C CNN
-F 1 "GND" H 2005 5527 50  0000 C CNN
-F 2 "" H 2000 5700 50  0001 C CNN
-F 3 "" H 2000 5700 50  0001 C CNN
-	1    2000 5700
+P 2000 5750
+F 0 "#PWR0136" H 2000 5500 50  0001 C CNN
+F 1 "GND" H 2005 5577 50  0000 C CNN
+F 2 "" H 2000 5750 50  0001 C CNN
+F 3 "" H 2000 5750 50  0001 C CNN
+	1    2000 5750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1211,17 +1198,6 @@ F 3 "" H 8900 4100 50  0001 C CNN
 	1    8900 4100
 	1    0    0    -1  
 $EndComp
-$Comp
-L RF_Module:ESP-12E U3
-U 1 1 5EBD7739
-P 8900 3350
-F 0 "U3" H 9350 4100 50  0000 C CNN
-F 1 "ESP-12E" H 8600 2700 50  0000 C CNN
-F 2 "RF_Module:ESP-12E" H 8900 3350 50  0001 C CNN
-F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 8550 3450 50  0001 C CNN
-	1    8900 3350
-	1    0    0    -1  
-$EndComp
 Connection ~ 10100 3400
 Wire Wire Line
 	10100 3450 10100 3400
@@ -1286,7 +1262,6 @@ F 3 "~" H 10100 3250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2000 5700 2000 5650
-NoConn ~ 1900 5650
 Wire Wire Line
 	7950 2750 8000 2750
 $Comp
@@ -1295,7 +1270,7 @@ U 1 1 5F22A1C6
 P 1700 4400
 F 0 "J2" H 1780 4392 50  0000 L CNN
 F 1 "Conn_01x06" H 1780 4301 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_S6B-PH-K_1x06_P2.00mm_Horizontal" H 1700 4400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1700 4400 50  0001 C CNN
 F 3 "~" H 1700 4400 50  0001 C CNN
 	1    1700 4400
 	1    0    0    -1  
@@ -1306,4 +1281,35 @@ Wire Wire Line
 	1450 4600 1500 4600
 Wire Wire Line
 	2500 1950 2500 2000
+$Comp
+L RF_Module:ESP-12E U3
+U 1 1 5EBD7739
+P 8900 3350
+F 0 "U3" H 9350 4100 50  0000 C CNN
+F 1 "ESP-12E" H 8600 2700 50  0000 C CNN
+F 2 "RF_Module:ESP-12E" H 8900 3350 50  0001 C CNN
+F 3 "http://wiki.ai-thinker.com/_media/esp8266/esp8266_series_modules_user_manual_v1.1.pdf" H 8550 3450 50  0001 C CNN
+	1    8900 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR0120
+U 1 1 5ED1131C
+P 5300 2500
+F 0 "#PWR0120" H 5300 2350 50  0001 C CNN
+F 1 "+3.3V" H 5450 2550 50  0000 C CNN
+F 2 "" H 5300 2500 50  0001 C CNN
+F 3 "" H 5300 2500 50  0001 C CNN
+	1    5300 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 5650 1900 5700
+Wire Wire Line
+	1900 5700 2000 5700
+Wire Wire Line
+	2000 5750 2000 5700
+Connection ~ 2000 5700
+Wire Notes Line style solid
+	1050 5950 2850 5950
 $EndSCHEMATC
