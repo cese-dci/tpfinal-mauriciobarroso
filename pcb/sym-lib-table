@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name emmon-rescue)(type Legacy)(uri ${KIPRJMOD}/emmon-rescue.lib)(options "")(descr ""))
+  (lib (name RF_Module)(type Legacy)(uri /home/mauricio/kicad/libraries/RF_Module.lib)(options "")(descr ""))
+)

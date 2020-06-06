@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name sx1278)(type KiCad)(uri /home/mauricio/kicad/libraries/kicad-rf/sx1278.pretty)(options "")(descr ""))
+)
