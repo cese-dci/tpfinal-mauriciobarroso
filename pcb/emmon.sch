@@ -9,7 +9,7 @@ Date "2020-06-10"
 Rev "1"
 Comp ""
 Comment1 ""
-Comment2 ""
+Comment2 "Licencia CC BY 4.0"
 Comment3 "Revisor: Pablo Jose Carlos Alonso Castillo"
 Comment4 "Autor: Mauricio Barroso Benavides"
 $EndDescr
@@ -1452,39 +1452,6 @@ F 5 "Multilayer Ceramic Capacitors MLCC - SMD/SMT 100nF 50V 0805 RoHS" H 8400 31
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:Fiducial FID1
-U 1 1 5EEFB61E
-P 1800 4200
-F 0 "FID1" H 1885 4246 50  0000 L CNN
-F 1 "Fiducial" H 1885 4155 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 1800 4200 50  0001 C CNN
-F 3 "~" H 1800 4200 50  0001 C CNN
-	1    1800 4200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:Fiducial FID2
-U 1 1 5EEFBA2C
-P 1800 4350
-F 0 "FID2" H 1885 4396 50  0000 L CNN
-F 1 "Fiducial" H 1885 4305 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 1800 4350 50  0001 C CNN
-F 3 "~" H 1800 4350 50  0001 C CNN
-	1    1800 4350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:Fiducial FID3
-U 1 1 5EEFBD1A
-P 1800 4500
-F 0 "FID3" H 1885 4546 50  0000 L CNN
-F 1 "Fiducial" H 1885 4455 50  0000 L CNN
-F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 1800 4500 50  0001 C CNN
-F 3 "~" H 1800 4500 50  0001 C CNN
-	1    1800 4500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:TestPoint PULSES1
 U 1 1 5EF09A63
 P 7650 3150
@@ -1553,4 +1520,37 @@ Wire Wire Line
 	8750 3450 8750 3500
 Text Notes 7000 4550 0    50   ~ 0
 The track to ANT_CONN\nmust be as wide as and \nclose as possible
+$Comp
+L Mechanical:Fiducial FID3
+U 1 1 5EEFBD1A
+P 1800 4500
+F 0 "FID3" H 1885 4546 50  0000 L CNN
+F 1 "Fiducial" H 1885 4455 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 1800 4500 50  0001 C CNN
+F 3 "~" H 1800 4500 50  0001 C CNN
+	1    1800 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID2
+U 1 1 5EEFBA2C
+P 1800 4350
+F 0 "FID2" H 1885 4396 50  0000 L CNN
+F 1 "Fiducial" H 1885 4305 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 1800 4350 50  0001 C CNN
+F 3 "~" H 1800 4350 50  0001 C CNN
+	1    1800 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:Fiducial FID1
+U 1 1 5EEFB61E
+P 1800 4200
+F 0 "FID1" H 1885 4246 50  0000 L CNN
+F 1 "Fiducial" H 1885 4155 50  0000 L CNN
+F 2 "Fiducial:Fiducial_1mm_Mask2mm" H 1800 4200 50  0001 C CNN
+F 3 "~" H 1800 4200 50  0001 C CNN
+	1    1800 4200
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
