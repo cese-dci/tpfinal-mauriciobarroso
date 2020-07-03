@@ -1380,6 +1380,8 @@ F 0 "U3" H 8808 3146 50  0000 L CNN
 F 1 "LM393DR2G" H 8808 3055 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 8850 3100 50  0001 C CNN
 F 3 "https://datasheet.lcsc.com/szlcsc/ON-Semicon-ON-LM393DR2G_C7955.pdf" H 8850 3100 50  0001 C CNN
+F 4 "C7955" H 8850 3100 50  0001 C CNN "LCSC"
+F 5 "Analog Comparators 2V - 36V, ±1V ~ 18V SOIC-8_150mil RoHS" H 8850 3100 50  0001 C CNN "Description"
 	3    8850 3100
 	1    0    0    -1  
 $EndComp
